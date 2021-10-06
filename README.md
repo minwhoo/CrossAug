@@ -48,7 +48,7 @@ model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
 model.to('cuda' if torch.cuda.is_available() else 'cpu')
 
 examples = [
-    "Little Miss Sunshine was flimed over 30 days.",
+    "Little Miss Sunshine was filmed over 30 days.",
     "Magic Johnson did not play for the Lakers.",
     "Claire Danes is wedded to an actor from England."
 ]
@@ -57,7 +57,7 @@ batch = tokenizer(examples, max_length=1024, padding=True, truncation=True, retu
 out = model.generate(batch['input_ids'].to(model.device), num_beams=5)
 negative_examples = tokenizer.batch_decode(out, skip_special_tokens=True)
 print(negative_examples)
-# ['Little Miss Sunshine was flimed less than 3 days.', 'Magic Johnson played for the Lakers.', 'Claire Danes is married to an actor from France.']
+# ['Little Miss Sunshine was filmed less than 3 days.', 'Magic Johnson played for the Lakers.', 'Claire Danes is married to an actor from France.']
 ```
 
 ## Train and test the model
