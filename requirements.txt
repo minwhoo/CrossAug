@@ -1,0 +1,12 @@
+jsonlines==2.0.0
+nltk==3.6.2
+numpy==1.20.2
+pandas==1.1.5
+scikit-learn==0.24.2
+scipy==1.6.3
+sentencepiece==0.1.95
+tensorboardX==2.2
+torch==1.8.1
+transformers==4.11.2
+pytorch-transformers==1.2.0
+tqdm==4.60.0
