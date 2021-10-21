@@ -23,6 +23,7 @@ Download FEVER[^1], FEVER Symmetric[^2], Adversarial FEVER[^3], and Fool Me Twic
 
 You can either download the FEVER train set augmented with CrossAug [here](http://milabfile.snu.ac.kr:15000/sharing/zdhCfoLzP) or manually generate augmented data from the next section.
 
+
 ## Data Augmentation
 ### Augment FEVER train dataset with CrossAug
 
